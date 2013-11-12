@@ -21,6 +21,12 @@ Template Name: Home Template
 <?php global $query_string; // required
 $posts = query_posts($query_string.'&posts_per_page=6&post_type="post"'); ?>
 
-  <?php get_template_part('templates/loop'); ?>
+<?php get_template_part('templates/loop'); ?>
   
 <?php wp_reset_query(); // reset the query ?>
+
+<nav class="post-nav">
+  <ul class="pager">
+    <li class="next"><a href="<?php echo get_page_uri(get_option( 'page_for_posts')); ?>"><?php _e('Read the rest of the posts &rarr;', 'lkk'); ?></a></li>
+  </ul>
+</nav>
