@@ -5,7 +5,7 @@
     <div class="row">
   <?php endif; ?>
 
-      <div class="<?php echo roots_index_class(); ?>">
+      <div class="<?php echo lkk_index_class(); ?>">
         <article <?php post_class(); ?>>  
         <?php get_template_part('templates/content', get_post_format()); ?>
         </article>

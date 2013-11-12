@@ -14,7 +14,7 @@ Template Name: Home Template
 
 <header class="page-header">
   <h1>
-    <?php _e('Recent Posts') ?>
+    <?php _e('Recent Posts', 'lkk') ?>
   </h1>
 </header>
 

@@ -15,14 +15,14 @@
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
-      <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?>
+      <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'lkk'); ?>
     </div>
   <![endif]-->
 
   
   <?php do_action('get_header'); ?>
     
-  <header class="site-header navbar navbar-default navbar-static-top <?php echo roots_mobile_header_class(); ?>" role="banner">
+  <header class="site-header navbar navbar-default navbar-static-top <?php echo lkk_mobile_header_class(); ?>" role="banner">
     <div class="wrap">
   
       <?php get_template_part('templates/header-mobile-main-nav'); ?>
@@ -36,16 +36,16 @@
     <div class="row">
     
 
-      <header class="site-header <?php echo roots_side_header_class(); ?>" role="banner">
+      <header class="site-header <?php echo lkk_side_header_class(); ?>" role="banner">
           <?php get_template_part('templates/header-side-main-nav'); ?>
       </header>
       
-      <section class="main <?php echo roots_main_class(); ?>" role="main">
+      <section class="main <?php echo lkk_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>
       </section><!-- /.main -->
       
       <?php if (roots_display_sidebar()) : ?>
-        <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
+        <aside class="sidebar <?php echo lkk_sidebar_class(); ?>" role="complementary">
           <?php dynamic_sidebar('sidebar-primary'); ?>
         </aside><!-- /.sidebar -->
       <?php endif; ?>
@@ -54,7 +54,7 @@
   
   </div><!-- /.wrap -->
   
-  <footer class="site-footer <?php echo roots_side_header_class(); ?>" role="">
+  <footer class="site-footer <?php echo lkk_side_header_class(); ?>" role="complementary">
     <?php dynamic_sidebar('sidebar-footer'); ?>
   </footer>
   

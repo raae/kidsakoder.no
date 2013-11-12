@@ -18,7 +18,7 @@ define('POST_EXCERPT_LENGTH', 40); // Length in words for excerpt_length filter 
  * .mobile_header classes
  */
 
-function roots_mobile_header_class() {
+function lkk_mobile_header_class() {
   return 'visible-xs';
 }
 
@@ -27,14 +27,14 @@ function roots_mobile_header_class() {
  * .side_header classes
  */
 
-function roots_side_header_class() {
+function lkk_side_header_class() {
   return 'hidden-xs col-sm-3 col-md-3 col-lg-2';
 }
 
 /**
  * .main classes
  */
-function roots_main_class() {
+function lkk_main_class() {
   if (roots_display_sidebar()) {
     // Classes on pages with the sidebar
     $class = 'col-sm-9 col-md-6 col-lg-7';
@@ -49,14 +49,14 @@ function roots_main_class() {
 /**
  * .sidebar classes
  */
-function roots_sidebar_class() {
+function lkk_sidebar_class() {
   return 'hidden-xs hidden-sm col-md-3 col-lg-3';
 }
 
 /**
  * .index classes
  */
-function roots_index_class() {
+function lkk_index_class() {
   return 'col-lg-6';
 }
 
