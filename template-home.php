@@ -18,8 +18,9 @@ Template Name: Home Template
   </h1>
 </header>
 
-<?php global $query_string; // required
-$posts = query_posts($query_string.'&posts_per_page=6&post_type="post"'); ?>
+<?php
+
+$posts = query_posts('posts_per_page=6&post_type="post"'); ?>
 
 <?php get_template_part('templates/loop'); ?>
   

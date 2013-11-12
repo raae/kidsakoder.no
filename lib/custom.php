@@ -1,5 +1,23 @@
 <?php
 
+
+load_theme_textdomain( 'lkk_admin', get_template_directory() . '/languages/admin' );
+load_theme_textdomain( 'lkk', get_template_directory() . '/languages' );
+
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+if(is_plugin_active('advanced-custom-fields/acf.php')) {
+
+  define('ACF', true);
+/*   define( 'ACF_LITE' , true );   */
+
+} else {
+
+  define('ACF', false);
+
+}
+
+
 /**
  * Page titles
  */
@@ -88,3 +106,34 @@ function register_lkk_group_post_type() {
 }
 
 add_action( 'init', 'register_lkk_group_post_type', 0 );
+
+
+/**
+ * Hack to remove current page on blog page when browsing custom posts.
+ *
+ */
+
+function theme_current_type_nav_class($css_class, $item) {
+    static $custom_post_types, $post_type, $filter_func;
+
+    if (empty($custom_post_types))
+        $custom_post_types = get_post_types(array('_builtin' => false));
+
+    if (empty($post_type))
+        $post_type = get_post_type();
+
+    if ('page' == $item->object && in_array($post_type, $custom_post_types)) {
+        if (empty($filter_func))
+            $filter_func = create_function('$el', 'return ($el != "current_page_parent");');
+
+        $css_class = array_filter($css_class, $filter_func);
+
+        $template = get_page_template_slug($item->object_id);
+        if (!empty($template) && preg_match("/^page(-[^-]+)*-$post_type/", $template) === 1)
+            array_push($css_class, 'current_page_parent');
+
+    }
+
+    return $css_class;
+}
+add_filter('nav_menu_css_class', 'theme_current_type_nav_class', 1, 2);

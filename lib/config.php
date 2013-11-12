@@ -57,7 +57,14 @@ function lkk_sidebar_class() {
  * .index classes
  */
 function lkk_index_class() {
-  return 'col-lg-6';
+  return 'col-sm-6 col-md-12 col-lg-6';
+}
+
+/**
+ * .lkk_group .entry-content classes
+ */
+function lkk_group_class() {
+  return 'col-sm-6 col-md-12 col-lg-6';
 }
 
 /**

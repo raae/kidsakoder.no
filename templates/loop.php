@@ -7,7 +7,7 @@
 
       <div class="<?php echo lkk_index_class(); ?>">
         <article <?php post_class(); ?>>  
-        <?php get_template_part('templates/content', get_post_format()); ?>
+        <?php get_template_part('templates/summary', get_post_format()); ?>
         </article>
       </div>
       
