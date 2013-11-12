@@ -99,9 +99,22 @@ body {
 .hentry header { }
 .hentry time { }
 .hentry .byline { }
-.hentry .entry-content {
-  font-size: @font-size-large;
-  font-weight: 200;
+.hentry {
+  .entry-content {
+    font-size: @font-size-large;
+    font-weight: 200;
+  }
+  
+  .group-content {
+    dl {
+      margin-bottom: 0;
+    }
+  
+    .contact-person img {
+      .pull-left;
+      margin-right: 15px;
+    }
+  }
 }
 .hentry footer { }
 

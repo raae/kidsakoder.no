@@ -3,7 +3,7 @@
   <div class="entry-content <?php echo lkk_group_class() ?>">
   <?php the_content(); ?>
   </div>
-  <div class="<?php echo lkk_group_class() ?>">
+  <div class="group-content <?php echo lkk_group_class() ?>">
   <?php comments_template('/templates/lkk_group-info.php'); ?>
   <?php comments_template('/templates/lkk_group-contact.php'); ?>
   <?php comments_template('/templates/lkk_group-location.php'); ?>
