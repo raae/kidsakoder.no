@@ -16,11 +16,11 @@
     <dl>
       <?php if(get_field('contact_person_email')): ?>
       <dt><?php _e('Email', 'lkk'); ?></dt>
-      <dd><?php the_field('contact_person_email') ?></dd>
+      <dd><a href="mailto:<?php the_field('contact_person_email') ?>"><?php the_field('contact_person_email') ?></a></dd>
       <?php endif; ?>
       <?php if(get_field('contact_person_number')): ?>
       <dt><?php _e('Phone number', 'lkk'); ?></dt>
-      <dd><?php the_field('contact_person_number') ?></dd>
+      <dd><a href="tel:<?php the_field('contact_person_number') ?>"><?php the_field('contact_person_number') ?></a></dd>
       <?php endif; ?>
     </dl>
   </div>
