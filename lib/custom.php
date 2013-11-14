@@ -17,6 +17,19 @@ if(is_plugin_active('advanced-custom-fields/acf.php')) {
 
 }
 
+/**
+ * Enqueue Google Maps
+ */
+
+function lkk_scripts() {
+  
+  wp_register_script('google_maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBGW3v823tOaZfVgGICOYlTikUKLojM2mA&sensor=false', false, null, true);
+  wp_register_script('lkk_maps', get_template_directory_uri() . '/assets/js/lkk-maps.js', false, null, false);
+  wp_enqueue_script('google_maps');
+  wp_enqueue_script('lkk_maps');
+}
+add_action('wp_enqueue_scripts', 'lkk_scripts', 200);
+
 
 /**
  * Page titles
