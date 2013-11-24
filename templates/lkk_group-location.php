@@ -1,4 +1,4 @@
-<?php if(ACF && get_field('group_location')): ?>
+<?php if(ACF && get_field('group_location')):?>
 
 <script type="text/javascript">
   var groupLocation = {
@@ -13,7 +13,7 @@
     <h3 class="panel-title"><?php echo get_field('group_location')['address']?></h3>
   </div>
   <div class="panel-body">
-    <div class="map" id="map"></div>
+    <div class="map"></div>
   </div>
 </div>
 
