@@ -30,22 +30,17 @@ function addMarkers(map, locations, infowindow) {
 
 $(function() {
 
-if(window['google']) {
 
-  if(window['groupLocation']) {
-    var map = initializeMap($('.single-lkk_group .map'), groupLocation.coordinates, 12);
-    addMarker(map, groupLocation.coordinates);
-  }
-  
-  var infowindow = new google.maps.InfoWindow();
-  
-  if(window['groupLocations']) {
-    var map = initializeMap($('.groups.map'), [61.0000, 8.0000], 6);
-    addMarkers(map, groupLocations, infowindow);
-  }
-  
-} else {
-  console.log("Google script has not been loaded");
+if(window['groupLocation']) {
+  var map = initializeMap($('.single-lkk_group .map'), groupLocation.coordinates, 12);
+  addMarker(map, groupLocation.coordinates);
+}
+
+var infowindow = new google.maps.InfoWindow();
+
+if(window['groupLocations']) {
+  var map = initializeMap($('.groups.map'), [61.0000, 8.0000], 6);
+  addMarkers(map, groupLocations, infowindow);
 }
   
 });

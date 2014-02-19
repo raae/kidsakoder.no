@@ -110,16 +110,13 @@ body {
    Posts
    ========================================================================== */
 
-.hentry header { }
-.hentry time { }
-.hentry .byline { }
 .hentry {
   .entry-content {
     font-size: @font-size-large;
     font-weight: 200;
   }
   
-  .group-content {
+  .group-extra-content {
     dl {
       margin-bottom: 0;
     }
@@ -144,8 +141,19 @@ body {
       height: 250px;
     }
   }
+  
+  footer {
+    margin-top: @navbar-margin-bottom;
+  }
 }
-.hentry footer { }
+
+.hentry #comments { 
+  margin-top: @navbar-margin-bottom*2;
+}
+
+.hentry #respond { 
+  margin-top: @navbar-margin-bottom*2;
+}
 
 
 

@@ -8,7 +8,7 @@ Template Name: Map Template
 
 <header class="page-header">
   <h1>
-    <?php _e('Map of groups', 'lkk') ?>
+    <?php _e('Group Map', 'lkk') ?>
   </h1>
 </header>
 
@@ -19,11 +19,12 @@ Template Name: Map Template
 </script>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php if(ACF && get_field('group_location')):?>
+  <?php if(ACF && get_field('group_location')): ?>
+  <?php $location = get_field('group_location')?>
   <script type="text/javascript">
     groupLocations.push({
-      address: '<?php echo get_field('group_location')['address']; ?>',
-      coordinates: [<?php echo get_field('group_location')['coordinates']; ?>],
+      address: '<?php echo $location['address']; ?>',
+      coordinates: [<?php echo $location['coordinates']; ?>],
       info: '<strong><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>'
     });   
   </script>

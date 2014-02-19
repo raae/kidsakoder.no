@@ -6,7 +6,8 @@
   </div>
   <div class="panel-body">
     <?php if(get_field('contact_person_image')): ?>
-    <img class="img-rounded" src="<?php echo get_field('contact_person_image')['sizes']['thumbnail'] ?>"/>
+    <?php $image = get_field('contact_person_image') ?>
+    <img class="img-rounded" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
     <?php endif; ?>
     
     <?php if(get_field('contact_person_name')): ?>    
