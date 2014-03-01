@@ -1,517 +1,475 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: Roots WordPress theme translations 1.0\n"
+"Project-Id-Version: LKK v0.0.9\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2014-03-01 12:23:07+0000\n"
 "Last-Translator: Bjørn Erik Pedersen <bjorn.erik.pedersen@gmail.com>\n"
 "Language-Team: utenH <kyrremg@gmail.com>\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
 "X-Poedit-Language: Norwegian Nynorsk\n"
 "X-Poedit-Country: NORWAY\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
 
-#. Text in echo
-#: comments.php:72
-#: comments.php:76
+#: templates/comments.php:58
+#: templates/comments.php:62
+#@ roots
 msgid " (required)"
 msgstr " (obligatorisk)"
 
-#. Text in echo
-#: inc/roots-options.php:260
-msgid "#fullwidth CSS Classes"
-msgstr "#fullwidth CSS Classes"
-
-#. Text in echo
-#: inc/roots-options.php:238
-#: inc/roots-options.php:240
-msgid "#main CSS Classes"
-msgstr "#main CSS Classes"
-
-#. Text in echo
-#: inc/roots-options.php:248
-#: inc/roots-options.php:250
-msgid "#sidebar CSS Classes"
-msgstr "#sidebar CSS Classes"
-
-#. Text in function
-#: comments.php:8
+#: templates/comment.php:4
+#, php-format
+#@ roots
 msgid "%1$s"
 msgstr "%1$s"
 
-#. Text in function
-#: inc/roots-activation.php:70
+#: lib/activation.php:51
+#, php-format
+#@ roots
 msgid "%s Theme Activation"
 msgstr "%s Aktivering av temaet"
 
-#. Text in function
-#: inc/roots-options.php:214
-msgid "%s Theme Options"
-msgstr "%s Innstillingar for temaet"
-
-#. Text in function
-#: comments.php:43
+#: templates/comments.php:18
+#@ roots
 msgid "&larr; Older comments"
 msgstr "&larr; Eldre kommentarar"
 
-#. Text in function
-#: loop.php:34
+#: templates/pagination.php:4
+#@ roots
 msgid "&larr; Older posts"
 msgstr "&larr; Eldre innlegg"
 
-#. Text in function
-#: comments.php:9
+#: templates/comment.php:5
+#@ roots
 msgid "(Edit)"
 msgstr "(Rediger)"
 
-#. Text in function
-#: inc/roots-options.php:1
-msgid "1140"
-msgstr "1140"
-
-#. Text in function
-#: inc/roots-options.php:1
-msgid "960gs (12 cols)"
-msgstr "960gs (12 cols)"
-
-#. Text in function
-#: inc/roots-options.php:1
-msgid "960gs (16 cols)"
-msgstr "960gs (16 cols)"
-
-#. Text in function
-#: inc/roots-options.php:1
-msgid "960gs (24 cols)"
-msgstr "960gs (24 cols)"
-
-#. Text in function
-#: comments.php:7
-msgid "<cite class=\"fn\">%s</cite>"
-msgstr "<cite class=\"fn\">%s</cite>"
-
-#. Text in function
-#: inc/roots-options.php:1
-msgid "Adapt.js"
-msgstr "Adapt.js"
-
-#. Text in function
-#: inc/roots-activation.php:145
+#: lib/activation.php:122
+#@ roots
 msgid "Add all current published pages to the Primary Navigation"
 msgstr "Legg alle publiserte sider til i hovudmenyen"
 
-#. Text in echo
-#: inc/roots-activation.php:137
-#: inc/roots-activation.php:139
+#: lib/activation.php:114
+#: lib/activation.php:116
+#@ roots
 msgid "Add pages to menu?"
 msgstr "Legg til sider i menyen?"
 
-#. Text in function
-#: archive.php:8
+#: lib/titles.php:26
+#, php-format
+#@ roots
 msgid "Author Archives: %s"
 msgstr "Forfattararkiv: %s"
 
-#. Text in function
-#: inc/roots-options.php:1
-msgid "Blueprint CSS"
-msgstr "Blueprint CSS"
-
-#. Text in function
-#: inc/roots-options.php:1
-msgid "Bootstrap"
-msgstr "Bootstrap"
-
-#. Text in echo
-#: inc/roots-options.php:282
-msgid "Bootstrap Javascript Packages"
-msgstr "Bootstrap Javascript-pakkar"
-
-#. Text in function
-#: inc/roots-options.php:1
-msgid "Bootstrap w/ Less"
-msgstr "Bootstrap med Less"
-
-#. Text in echo
-#: inc/roots-options.php:226
-#: inc/roots-options.php:228
-msgid "CSS Grid Framework"
-msgstr "CSS grid-rammeverk"
-
-#. Text in function
-#: inc/roots-activation.php:106
+#: lib/activation.php:83
+#@ roots
 msgid "Change permalink structure to /&#37;postname&#37;/"
 msgstr "Endre permalenkestrukturen til /&#37;postname&#37;/"
 
-#. Text in echo
-#: inc/roots-activation.php:98
+#: lib/activation.php:75
+#@ roots
 msgid "Change permalink structure?"
 msgstr "Endre permalenkestruktur?"
 
-#. Text in function
-#: inc/roots-activation.php:119
-msgid "Change uploads folder to /assets/ instead of /wp-content/uploads/"
-msgstr "Endre mappe for opplastingar til /assets/ i staden for /wp-content/uploads/"
-
-#. Text in echo
-#: inc/roots-activation.php:111
+#: lib/activation.php:88
+#@ roots
 msgid "Change uploads folder?"
 msgstr "Endre mappe for opplasting?"
 
-#. Text in echo
-#: 404.php:11
-msgid "Check your spelling"
-msgstr "Kontrollér stavinga"
-
-#. Text in echo
-#: inc/roots-widgets.php:107
-msgid "City/Locality:"
-msgstr "By/område:"
-
-#. Text in echo
-#: inc/roots-options.php:315
-#: inc/roots-options.php:317
-msgid "Cleanup Menu Output"
-msgstr "Rens menyutdata"
-
-#. Text in echo
-#: 404.php:13
-msgid "Click the <a href=\"javascript:history.back()\">Back</a> button"
-msgstr "Gå til <a href=\"javascript:history.back()\">førre</a> side"
-
-#. Text in echo
-#: comments.php:85
+#: templates/comments.php:71
+#@ roots
 msgid "Comment"
 msgstr "Kommentar"
 
-#. Text in echo
-#: comments.php:49
-#: comments.php:56
+#: templates/comments.php:29
+#: templates/comments.php:38
+#@ roots
 msgid "Comments are closed."
 msgstr "Kommentarane er stengt."
 
-#. Text in function
-#: inc/roots-cleanup.php:1
+#: lib/cleanup.php:198
+#@ roots
 msgid "Continued"
 msgstr "Hald fram"
 
-#. Text in function
-#: inc/roots-activation.php:93
+#: lib/activation.php:70
+#@ roots
 msgid "Create a page called Home and set it to be the static front page"
 msgstr "Opprett sida Heim og gjer denne til statisk forside"
 
-#. Text in echo
-#: inc/roots-activation.php:124
-#: inc/roots-activation.php:126
-msgid "Create navigation menus?"
-msgstr "Opprette menyar?"
-
-#. Text in echo
-#: inc/roots-activation.php:85
-#: inc/roots-activation.php:87
+#: lib/activation.php:62
+#: lib/activation.php:64
+#@ roots
 msgid "Create static front page?"
 msgstr "Opprette statisk forside?"
 
-#. Text in function
-#: inc/roots-activation.php:132
-msgid "Create the Primary and Utility Navigation menus and set their locations"
-msgstr "Opprett primære og sekundære menyar med plassering"
-
-#. Text in function
-#: archive.php:8
+#: lib/titles.php:19
+#, php-format
+#@ roots
 msgid "Daily Archives: %s"
 msgstr "Daglege arkiv: %s"
 
-#. Text in echo
-#: inc/roots-options.php:243
-#: inc/roots-options.php:253
-#: inc/roots-options.php:263
-msgid "Default:"
-msgstr "Standard:"
-
-#. Text in echo
-#: comments.php:76
+#: templates/comments.php:62
+#@ roots
 msgid "Email (will not be published)"
 msgstr "E-post (blir ikkje vist)"
 
-#. Text in echo
-#: inc/roots-widgets.php:123
-msgid "Email:"
-msgstr "E-post:"
-
-#. Text in echo
-#: inc/roots-options.php:284
-msgid "Enable Bootstrap Javascript"
-msgstr "Aktiver  Bootstrap Javascript"
-
-#. Text in echo
-#: inc/roots-options.php:304
-#: inc/roots-options.php:306
-msgid "Enable Root Relative URLs"
-msgstr "Aktiver rotrelative URLar"
-
-#. Text in function
-#: inc/roots-options.php:299
-msgid "Enter your UA-XXXXX-X ID"
-msgstr "Fyll inn UA-XXXXX-X ID"
-
-#. Text in echo
-#: 404.php:7
-msgid "File Not Found"
-msgstr "Fann ikkje fila"
-
-#. Text in function
-#: inc/roots-options.php:1
-msgid "Foundation"
-msgstr "Foundation"
-
-#. Text in echo
-#: inc/roots-options.php:258
-msgid "Full Width CSS Classes"
-msgstr "CSS-klassar med full breidd"
-
-#. Text in echo
-#: inc/roots-options.php:294
-#: inc/roots-options.php:296
-msgid "Google Analytics ID"
-msgstr "Google Analytics ID"
-
-#. Text in echo
-#: index.php:7
+#: lib/titles.php:10
+#: template-home.php:11
+#@ roots
 msgid "Latest Posts"
 msgstr "Siste innlegg"
 
-#. Text in function
-#: comments.php:62
+#: templates/comments.php:45
+#@ roots
 msgid "Leave a Reply"
 msgstr "Skriv eit svar"
 
-#. Text in function
-#: comments.php:62
+#: templates/comments.php:45
+#, php-format
+#@ roots
 msgid "Leave a Reply to %s"
 msgstr "Skriv eit svar til %s"
 
-#. Text in function
-#: inc/roots-options.php:1
-msgid "Less Framework 4"
-msgstr "Less Framework 4"
-
-#. Text in echo
-#: comments.php:69
+#: templates/comments.php:54
+#@ roots
 msgid "Log out &raquo;"
 msgstr "Logg ut &raquo;"
 
-#. Text in function
-#: comments.php:69
+#: templates/comments.php:54
+#@ roots
 msgid "Log out of this account"
 msgstr "Logg ut av kontoen"
 
-#. Text in function
-#: comments.php:69
+#: templates/comments.php:53
+#, php-format
+#@ roots
 msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
 msgstr "Innlogga som <a href=\"%s/wp-admin/profile.php\">%s</a>."
 
-#. Text in function
-#: archive.php:8
+#: lib/titles.php:21
+#, php-format
+#@ roots
 msgid "Monthly Archives: %s"
 msgstr "Månadlege arkiv: %s"
 
-#. Text in echo
-#: comments.php:72
+#: templates/comments.php:58
+#@ roots
 msgid "Name"
 msgstr "Namn"
 
-#. Text in function
-#: comments.php:44
+#: templates/comments.php:21
+#@ roots
 msgid "Newer comments &rarr;"
 msgstr "Nyare kommentarar &rarr;"
 
-#. Text in function
-#: loop.php:35
+#: templates/pagination.php:5
+#@ roots
 msgid "Newer posts &rarr;"
 msgstr "Nyare indlegg &rarr;"
 
-#. Text in echo
-#: inc/roots-activation.php:142
-#: inc/roots-options.php:274
-#: inc/roots-options.php:287
-#: inc/roots-options.php:309
-#: inc/roots-options.php:320
+#: lib/activation.php:67
+#: lib/activation.php:80
+#: lib/activation.php:93
+#: lib/activation.php:106
+#: lib/activation.php:119
+#@ roots
 msgid "No"
 msgstr "Nei"
 
-#. Text in function
-#: inc/roots-options.php:1
-msgid "None"
-msgstr "Ingen"
-
-#. Text in function
-#: loop-single.php:14
-#: loop-page.php:7
+#: templates/content-lkk_group.php:14
+#: templates/content.php:12
+#: templates/content.php:14
+#@ roots
 msgid "Pages:"
 msgstr "Sider:"
 
-#. Text in function
-#: inc/roots-htaccess.php:1
-msgid "Please make sure your <a href=\"%s\">.htaccess</a> file is writable "
-msgstr "Sjekk at <a href=\"%s\">.htaccess</a> er skrivbar"
-
-#. Text in echo
-#: 404.php:9
-msgid "Please try the following:"
-msgstr "Gjer vel og prøv eitt av dei følgjande forslaga:"
-
-#. Text in function
-#: inc/roots-cleanup.php:1
-msgid "Please update your <a href=\"%s\">site tagline</a> <a href=\"%s\" style=\"float: right;\">Hide Notice</a>"
-msgstr "Gjer vel og  oppdater <a href=\"%s\">slagordet for nettstaden</a> <a href=\"%s\" style=\"float: right;\">Skjul meldinga</a>"
-
-#. Text in function
-#: functions.php:1
-msgid "Posted on %s at %s."
-msgstr "Skrive %s kl. %s."
-
-#. Text in function
-#: functions.php:1
+#: lib/init.php:11
+#@ roots
 msgid "Primary Navigation"
 msgstr "Hovudmeny"
 
-#. Text in function
-#: 404.php:12
-msgid "Return to the <a href=\"%s\">home page</a>"
-msgstr "Tilbake til <a href=\"%s\">forsida</a>"
-
-#. Text in function
-#: inc/roots-widgets.php:1
-msgid "Roots: vCard"
-msgstr "Roots: vCard"
-
-#. Text in echo
-#: searchform.php:3
-#: searchform.php:4
+#: templates/searchform.php:3
+#: templates/searchform.php:6
+#@ roots
 msgid "Search"
 msgstr "Søk"
 
-#. Text in echo
-#: search.php:7
-msgid "Search Results for"
-msgstr "Søkeresultat for"
-
-#. Text in echo
-#: searchform.php:2
+#: templates/searchform.php:4
+#@ roots
 msgid "Search for:"
 msgstr "Søk etter"
 
-#. Text in echo
-#: loop.php:3
+#: index.php:5
+#@ roots
 msgid "Sorry, no results were found."
 msgstr "Søket gav ikkje noko resultat."
 
-#. Text in echo
-#: inc/roots-widgets.php:111
-msgid "State/Region:"
-msgstr "By:"
-
-#. Text in echo
-#: inc/roots-widgets.php:103
-msgid "Street Address:"
-msgstr "Adresse:"
-
-#. Text in echo
-#: comments.php:88
+#: templates/comments.php:74
+#@ roots
 msgid "Submit Comment"
 msgstr "Lagre kommentar"
 
-#. Text in echo
-#: inc/roots-widgets.php:119
-msgid "Telephone:"
-msgstr "Telefon:"
-
-#. Text in echo
-#: 404.php:8
-msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
-msgstr "Sida du ser etter er ikkje her. Ho kan vere fjerna, fått nytt namn eller ho er mellombels utilgjengeleg."
-
-#. Text in function
-#: inc/roots-activation.php:1
+#: lib/activation.php:28
+#: lib/activation.php:29
+#@ roots
 msgid "Theme Activation"
 msgstr "Temaaktivering"
 
-#. Text in function
-#: inc/roots-options.php:1
-msgid "Theme Options"
-msgstr "Temaval"
-
-#. Text in echo
-#: comments.php:27
-msgid "This post is password protected. Enter the password to view comments."
-msgstr "Dette innlegget er passordbeskytta. Skriv inn passord for å sjå kommentarar."
-
-#. Text in echo
-#: inc/roots-widgets.php:99
-msgid "Title (optional):"
-msgstr "Tittel (valfri):"
-
-#. Text in echo
-#: inc/roots-activation.php:100
+#: lib/activation.php:77
+#@ roots
 msgid "Update permalink structure?"
 msgstr "Oppdater permalenkestruktur?"
 
-#. Text in echo
-#: inc/roots-activation.php:113
+#: lib/activation.php:90
+#@ roots
 msgid "Update uploads folder?"
 msgstr "Oppdater opplastingsmappa?"
 
-#. Text in function
-#: inc/roots-widgets.php:1
-msgid "Use this widget to add a vCard"
-msgstr "Bruk denne widgeten for å sette inn eit visittkort (vCard)"
-
-#. Text in function
-#: functions.php:1
-msgid "Utility Navigation"
-msgstr "Sekundær navigasjon"
-
-#. Text in echo
-#: comments.php:80
+#: templates/comments.php:66
+#@ roots
 msgid "Website"
 msgstr "Nettstad"
 
-#. Text in function
-#: functions.php:1
-msgid "Written by"
-msgstr "Skrive av"
-
-#. Text in function
-#: archive.php:8
+#: lib/titles.php:23
+#, php-format
+#@ roots
 msgid "Yearly Archives: %s"
 msgstr "Årlege arkiv: %s"
 
-#. Text in echo
-#: inc/roots-activation.php:141
-#: inc/roots-options.php:273
-#: inc/roots-options.php:286
-#: inc/roots-options.php:308
-#: inc/roots-options.php:319
+#: lib/activation.php:66
+#: lib/activation.php:79
+#: lib/activation.php:92
+#: lib/activation.php:105
+#: lib/activation.php:118
+#@ roots
 msgid "Yes"
 msgstr "Ja"
 
-#. Text in function
-#: comments.php:65
+#: templates/comments.php:48
+#, php-format
+#@ roots
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Du må vere <a href=\"%s\">innlogga</a> for å skrive kommentarar."
 
-#. Text in echo
-#: comments.php:13
+#: templates/comment.php:9
+#@ roots
 msgid "Your comment is awaiting moderation."
 msgstr "Kommentaren din ventar på å verte godkjend."
 
-#. Text in echo
-#: inc/roots-widgets.php:115
-msgid "Zipcode/Postal Code:"
-msgstr "Postnr.:"
+#: 404.php:4
+#@ roots
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr ""
 
-#. Text in function
-#: inc/roots-widgets.php:1
-msgid "vCard"
-msgstr "Visittkort (vCard)"
+#: 404.php:7
+#@ roots
+msgid "It looks like this was the result of either:"
+msgstr ""
+
+#: 404.php:9
+#@ roots
+msgid "a mistyped address"
+msgstr ""
+
+#: 404.php:10
+#@ roots
+msgid "an out-of-date link"
+msgstr ""
+
+#: base.php:18
+#@ roots
+msgid "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+
+#: lib/activation.php:96
+#@ roots
+msgid "Change uploads folder to /media/ instead of /wp-content/uploads/"
+msgstr ""
+
+#: lib/activation.php:101
+#: lib/activation.php:103
+#@ roots
+msgid "Create navigation menu?"
+msgstr ""
+
+#: lib/activation.php:109
+#@ roots
+msgid "Create the Primary Navigation menu and set the location"
+msgstr ""
+
+#: lib/custom.php:41
+#@ roots
+msgid "Recent Posts"
+msgstr ""
+
+#: lib/custom.php:50
+#: lib/custom.php:52
+#: lib/custom.php:54
+#: lib/custom.php:57
+#, php-format
+#@ roots
+msgid "Archive | %s"
+msgstr ""
+
+#: lib/custom.php:62
+#: lib/titles.php:31
+#, php-format
+#@ roots
+msgid "Search Results for %s"
+msgstr ""
+
+#: lib/custom.php:64
+#: lib/titles.php:33
+#@ roots
+msgid "Not Found"
+msgstr ""
+
+#: lib/custom.php:75
+#@ lkk_admin
+msgctxt "Group Type General Name"
+msgid "Groups"
+msgstr ""
+
+#: lib/custom.php:76
+#@ lkk_admin
+msgctxt "Group Type Singular Name"
+msgid "Group"
+msgstr ""
+
+#: lib/custom.php:77
+#: template-groups.php:11
+#@ lkk_admin
+#@ roots
+msgid "Groups"
+msgstr ""
+
+#: lib/custom.php:78
+#@ lkk_admin
+msgid "Parent Group:"
+msgstr ""
+
+#: lib/custom.php:79
+#@ lkk_admin
+msgid "All Groups"
+msgstr ""
+
+#: lib/custom.php:80
+#@ lkk_admin
+msgid "View Group"
+msgstr ""
+
+#: lib/custom.php:81
+#@ lkk_admin
+msgid "Add New Group"
+msgstr ""
+
+#: lib/custom.php:82
+#@ lkk_admin
+msgid "New Group"
+msgstr ""
+
+#: lib/custom.php:83
+#@ lkk_admin
+msgid "Edit Group"
+msgstr ""
+
+#: lib/custom.php:84
+#@ lkk_admin
+msgid "Update Group"
+msgstr ""
+
+#: lib/custom.php:85
+#@ lkk_admin
+msgid "Search groups"
+msgstr ""
+
+#: lib/custom.php:86
+#@ lkk_admin
+msgid "No groups found"
+msgstr ""
+
+#: lib/custom.php:87
+#@ lkk_admin
+msgid "No groups found in Trash"
+msgstr ""
+
+#: lib/custom.php:90
+#@ lkk_admin
+msgctxt "Group Slug"
+msgid "groups"
+msgstr ""
+
+#: lib/custom.php:96
+#@ lkk_admin
+msgid "lkk_group"
+msgstr ""
+
+#: lib/widgets.php:8
+#@ roots
+msgid "Primary"
+msgstr ""
+
+#: lib/widgets.php:17
+#@ roots
+msgid "Footer"
+msgstr ""
+
+#: template-map.php:11
+#@ roots
+msgid "Group Map"
+msgstr ""
+
+#: templates/comments.php:8
+#, php-format
+#@ roots
+msgid "One Response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/lkk_group-contact.php:5
+#@ roots
+msgid "Group Contact"
+msgstr ""
+
+#: templates/lkk_group-contact.php:19
+#@ roots
+msgid "Email"
+msgstr ""
+
+#: templates/lkk_group-contact.php:23
+#@ roots
+msgid "Phone number"
+msgstr ""
+
+#: templates/lkk_group-info.php:8
+#@ roots
+msgid "Local Group"
+msgstr ""
+
+#: templates/lkk_group-info.php:10
+#@ roots
+msgid "Code Club"
+msgstr ""
+
+#: templates/lkk_group-info.php:12
+#, php-format
+#@ roots
+msgid "Tech Group: %s"
+msgstr ""
+
+#: templates/lkk_group-info.php:14
+#@ roots
+msgid "Group"
+msgstr ""
 

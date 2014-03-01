@@ -1,7 +1,5 @@
 <?php
 
-
-
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 if(is_plugin_active('advanced-custom-fields/acf.php')) {
@@ -72,28 +70,28 @@ function lkk_title() {
 function register_lkk_group_post_type() {
 
 	$labels = array(
-		'name'                => _x( 'Groups', 'Group Type General Name', 'lkk_admin' ),
-		'singular_name'       => _x( 'Group', 'Group Type Singular Name', 'lkk_admin' ),
-		'menu_name'           => __( 'Groups', 'lkk_admin' ),
-		'parent_item_colon'   => __( 'Parent Group:', 'lkk_admin' ),
-		'all_items'           => __( 'All Groups', 'lkk_admin' ),
-		'view_item'           => __( 'View Group', 'lkk_admin' ),
-		'add_new_item'        => __( 'Add New Group', 'lkk_admin' ),
-		'add_new'             => __( 'New Group', 'lkk_admin' ),
-		'edit_item'           => __( 'Edit Group', 'lkk_admin' ),
-		'update_item'         => __( 'Update Group', 'lkk_admin' ),
-		'search_items'        => __( 'Search groups', 'lkk_admin' ),
-		'not_found'           => __( 'No groups found', 'lkk_admin' ),
-		'not_found_in_trash'  => __( 'No groups found in Trash', 'lkk_admin' ),
+		'name'                => _x( 'Groups', 'Group Type General Name', 'roots' ),
+		'singular_name'       => _x( 'Group', 'Group Type Singular Name', 'roots' ),
+		'menu_name'           => __( 'Groups', 'roots' ),
+		'parent_item_colon'   => __( 'Parent Group:', 'roots' ),
+		'all_items'           => __( 'All Groups', 'roots' ),
+		'view_item'           => __( 'View Group', 'roots' ),
+		'add_new_item'        => __( 'Add New Group', 'roots' ),
+		'add_new'             => __( 'New Group', 'roots' ),
+		'edit_item'           => __( 'Edit Group', 'roots' ),
+		'update_item'         => __( 'Update Group', 'roots' ),
+		'search_items'        => __( 'Search groups', 'roots' ),
+		'not_found'           => __( 'No groups found', 'roots' ),
+		'not_found_in_trash'  => __( 'No groups found in Trash', 'roots' ),
 	);
 	$rewrite = array(
-		'slug'                => _x('groups', 'Group Slug', 'lkk_admin'),
+		'slug'                => _x('groups', 'Group Slug', 'roots'),
 		'with_front'          => true,
 		'pages'               => true,
 		'feeds'               => true,
 	);
 	$args = array(
-		'label'               => __( 'lkk_group', 'lkk_admin' ),
+		'label'               => __( 'lkk_group', 'roots' ),
 		'description'         => '',
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'thumbnail', 'revisions' ),
