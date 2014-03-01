@@ -107,7 +107,7 @@ module.exports = function(grunt) {
           authKey: 'prod'
         },
         src: './',
-        dest: '/wp-content/themes/lkk',
+        dest: '/wp-content/themes/LKK',
         exclusions: ['.git*', '.ftppass', 'node_modules', '*.less', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc']
       }
     }
