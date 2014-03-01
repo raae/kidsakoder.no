@@ -1,10 +1,10 @@
-# [Kidsakoder Theme](http://kidsakoder.wpengine.no)
+# Kidsakoder Theme
 
-This is an initativ to create a simpler and cleaner theme for LKK.
+This is an initativ to create a simpler and cleaner theme for LKK. The current page is found at [kidsakoder.no](http://kidsakoder.no) and the new initativ is found at [kidsakoder.wpengine.com](http://kidsakoder.wpengine.com/).
 
 The theme is based on the starter theme [Roots Theme](http://roots.io/).
 
-In addition the theme is depended on [Advanced Custom Fields](http://www.advancedcustomfields.com/), but is not bundled with the theme.
+In addition the theme is depended on [Advanced Custom Fields](http://www.advancedcustomfields.com/) that needs to be installed seperatly as a plugin.
 
 - - -
 
