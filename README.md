@@ -1,3 +1,13 @@
+# [Kidsakoder Theme](http://kidsakoder.wpengine.no)
+
+This is an initativ to create a simpler and cleaner theme for LKK.
+
+The theme is based on the starter theme [Roots Theme](http://roots.io/).
+
+In addition the theme is depended on [Advanced Custom Fields](http://www.advancedcustomfields.com/), but is not bundled with the theme.
+
+- - -
+
 # [Roots Theme](http://roots.io/)
 
 Roots is a WordPress starter theme based on [HTML5 Boilerplate](http://html5boilerplate.com/) & [Bootstrap](http://getbootstrap.com/) that will help you make better themes.
