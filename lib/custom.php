@@ -1,8 +1,6 @@
 <?php
 
 
-load_theme_textdomain( 'lkk_admin', get_template_directory() . '/languages/admin' );
-load_theme_textdomain( 'lkk', get_template_directory() . '/languages' );
 
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
@@ -40,7 +38,7 @@ function lkk_title() {
     if (get_option('page_for_posts', true)) {
       echo get_the_title(get_option('page_for_posts', true));
     } else {
-      _e('Recent Posts', 'lkk');
+      _e('Recent Posts', 'roots');
     }
   } elseif (is_archive()) {
     $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
@@ -49,21 +47,21 @@ function lkk_title() {
     } elseif (is_post_type_archive()) {
       echo apply_filters('the_title', get_queried_object()->labels->name);
     } elseif (is_day()) {
-      printf(__('Archive | %s', 'lkk'), get_the_date());
+      printf(__('Archive | %s', 'roots'), get_the_date());
     } elseif (is_month()) {
-      printf(__('Archive | %s', 'lkk'), ucfirst(get_the_date('F Y')));
+      printf(__('Archive | %s', 'roots'), ucfirst(get_the_date('F Y')));
     } elseif (is_year()) {
-      printf(__('Archive | %s', 'lkk'), get_the_date('Y'));
+      printf(__('Archive | %s', 'roots'), get_the_date('Y'));
     } elseif (is_author()) {
       $author = get_queried_object();
-      printf(__('Archive | %s', 'lkk'), $author->display_name);
+      printf(__('Archive | %s', 'roots'), $author->display_name);
     } else {
       single_cat_title();
     }
   } elseif (is_search()) {
-    printf(__('Search Results for %s', 'lkk'), get_search_query());
+    printf(__('Search Results for %s', 'roots'), get_search_query());
   } elseif (is_404()) {
-    _e('Not Found', 'lkk');
+    _e('Not Found', 'roots');
   } else {
     the_title();
   }

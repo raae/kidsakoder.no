@@ -5,13 +5,13 @@
     <h3 class="panel-title">
     <?php 
     if(get_field('group_type') == 'local')
-      _e('Local Group', 'lkk');
+      _e('Local Group', 'roots');
     elseif(get_field('group_type') == 'code_club')
-      _e('Code Club', 'lkk');
+      _e('Code Club', 'roots');
     elseif(get_field('group_type') == 'tech')
-      printf(__('Tech Group: %s', 'lkk'), get_field('group_techology'));
+      printf(__('Tech Group: %s', 'roots'), get_field('group_techology'));
     else
-      _e('Group','lkk');
+      _e('Group','roots');
     ?>
     </h3>
   </div>

@@ -2,7 +2,7 @@
 
 <div class="panel panel-default contact-person">
   <div class="panel-heading">
-    <h3 class="panel-title"><?php _e('Group Contact', 'lkk'); ?></h3>
+    <h3 class="panel-title"><?php _e('Group Contact', 'roots'); ?></h3>
   </div>
   <div class="panel-body">
     <?php if(get_field('contact_person_image')): ?>
@@ -16,11 +16,11 @@
 
     <dl>
       <?php if(get_field('contact_person_email')): ?>
-      <dt><?php _e('Email', 'lkk'); ?></dt>
+      <dt><?php _e('Email', 'roots'); ?></dt>
       <dd><a href="mailto:<?php the_field('contact_person_email') ?>"><?php the_field('contact_person_email') ?></a></dd>
       <?php endif; ?>
       <?php if(get_field('contact_person_number')): ?>
-      <dt><?php _e('Phone number', 'lkk'); ?></dt>
+      <dt><?php _e('Phone number', 'roots'); ?></dt>
       <dd><a href="tel:<?php the_field('contact_person_number') ?>"><?php the_field('contact_person_number') ?></a></dd>
       <?php endif; ?>
     </dl>

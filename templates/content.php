@@ -9,9 +9,9 @@
   <footer class="panel panel-default">
     
     <?php if('post' == get_post_type()): ?> 
-      <?php wp_link_pages(array('before' => '<nav class="page-nav panel-heading">' . __('Pages:', 'lkk'), 'after' => '</nav>')); ?>
+      <?php wp_link_pages(array('before' => '<nav class="page-nav panel-heading">' . __('Pages:', 'roots'), 'after' => '</nav>')); ?>
     <?php else: ?>
-      <?php wp_link_pages(array('before' => '<nav class="page-nav panel-body">' . __('Pages:', 'lkk'), 'after' => '</nav>')); ?>
+      <?php wp_link_pages(array('before' => '<nav class="page-nav panel-body">' . __('Pages:', 'roots'), 'after' => '</nav>')); ?>
     <?php endif; ?>
     
     <?php if('post' == get_post_type()): ?> 

@@ -8,7 +8,7 @@ Template Name: Home Template
 
 <header class="page-header">
   <h1>
-    <?php _e('News', 'lkk') ?>
+    <?php _e('Latest Posts', 'roots') ?>
   </h1>
 </header>
 

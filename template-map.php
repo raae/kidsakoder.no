@@ -8,7 +8,7 @@ Template Name: Map Template
 
 <header class="page-header">
   <h1>
-    <?php _e('Group Map', 'lkk') ?>
+    <?php _e('Group Map', 'roots') ?>
   </h1>
 </header>
 

@@ -8,7 +8,7 @@ Template Name: Groups Template
 
 <header class="page-header">
   <h1>
-    <?php _e('Groups', 'lkk') ?>
+    <?php _e('Groups', 'roots') ?>
   </h1>
 </header>
 
