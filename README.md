@@ -6,6 +6,25 @@ The theme is based on the starter theme [Roots Theme](http://roots.io/).
 
 In addition the theme is depended on [Advanced Custom Fields](http://www.advancedcustomfields.com/) that needs to be installed seperatly as a plugin.
 
+## Deploy
+
+To upload the theme files to wp_content/themes/lkk use the command:
+
+```
+grunt deploy
+```
+
+Make sure to add a file called .ftppass with your sftp credentials using the following format:
+
+```
+{
+  "prod": {
+    "username": "username1",
+    "password": "password1"
+  }
+}
+```
+
 - - -
 
 # [Roots Theme](http://roots.io/)

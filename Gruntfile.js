@@ -98,7 +98,20 @@ module.exports = function(grunt) {
         'assets/css/main.min.css',
         'assets/js/scripts.min.js'
       ]
+    },
+    'sftp-deploy': {
+      build: {
+        auth: {
+          host: '178.79.166.205',
+          port: 22,
+          authKey: 'prod'
+        },
+        src: './',
+        dest: '/wp-content/themes/lkk',
+        exclusions: ['.git*', '.ftppass', 'node_modules', '*.less', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc']
+      }
     }
+  
   });
 
   // Load tasks
@@ -108,6 +121,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-wp-version');
+  grunt.loadNpmTasks('grunt-sftp-deploy');
+  
+
+
+  // rename tasks
+  grunt.registerTask('deploy', [
+    'sftp-deploy'
+  ]);
 
   // Register tasks
   grunt.registerTask('default', [
