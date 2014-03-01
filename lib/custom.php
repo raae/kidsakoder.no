@@ -104,7 +104,7 @@ function register_lkk_group_post_type() {
 		'show_in_admin_bar'   => true,
 		'menu_position'       => 5,
 		'can_export'          => true,
-		'has_archive'         => false,
+		'has_archive'         => true ,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'rewrite'             => $rewrite,
@@ -123,24 +123,28 @@ add_action( 'init', 'register_lkk_group_post_type', 0 );
  */
 
 function theme_current_type_nav_class($css_class, $item) {
-    static $custom_post_types, $post_type, $filter_func;
-
+    static $custom_post_types, $post_type, $post_slug, $filter_func;
+  
     if (empty($custom_post_types))
         $custom_post_types = get_post_types(array('_builtin' => false));
 
     if (empty($post_type))
         $post_type = get_post_type();
+  
+    if (empty($post_type))
+        $post_slug = get_post_type_object( $post_type )->rewrite['slug'];
 
-    if ('page' == $item->object && in_array($post_type, $custom_post_types)) {
+    if (('page' == $item->object && in_array($post_type, $custom_post_types))
+       || ('custom' == $item->object && !empty($item->url) && preg_match("/^$post_slug/", $item->url) === 1)) {
+      
         if (empty($filter_func))
             $filter_func = create_function('$el', 'return ($el != "current_page_parent");');
 
         $css_class = array_filter($css_class, $filter_func);
-
+      
         $template = get_page_template_slug($item->object_id);
         if (!empty($template) && preg_match("/^page(-[^-]+)*-$post_type/", $template) === 1)
             array_push($css_class, 'current_page_parent');
-
     }
 
     return $css_class;
