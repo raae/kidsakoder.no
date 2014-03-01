@@ -5,28 +5,42 @@
 @import "bootstrap/bootstrap.less";
 
 /* ==========================================================================
+   Variables
+   ========================================================================== */
+
+@font-size: 16px;
+@font-family-sans-serif:  'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+@headings-font-weight: bold;
+
+@brand-primary: #27d96a;
+
+//@link-color:            @text-color;
+@link-hover-color:      @brand-primary;
+//@badge-active-color:    @brand-primary;
+
+/* ==========================================================================
    Base
    ========================================================================== */
 
 body {
+  background: #242E33;
+  
   .wrap {
     padding: 0 15px;
   }
   
-  @media (min-width: @grid-float-breakpoint) {
-    padding: @navbar-margin-bottom*2 0; 
-  }
-  
 }
-
-
 
 /* ==========================================================================
    Header
    ========================================================================== */
 
 .site-header {
-
+  
+  @media (min-width: @grid-float-breakpoint) {
+    padding-top: @navbar-margin-bottom*2; 
+  }
+  
   .brand {
     color: @navbar-default-brand-color;
     padding: 0 @navbar-padding-horizontal @navbar-padding-vertical @navbar-padding-horizontal;
@@ -38,6 +52,11 @@ body {
       text-decoration: none;
       color: @navbar-default-brand-hover-color;
     }
+    
+    img {
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
 
   }
 }
@@ -47,15 +66,32 @@ body {
    Primary Content
    ========================================================================== */
 
-.main {
-  .jumbotron a {
-/*     .btn; */
-/*     .btn-primary; */
-  }
-}
-
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
+
+.main {
+  background: #FFF;
+  padding: 2em;
+  
+  a {
+    color: @text-color;
+    text-decoration: underline;
+    
+    &:hover {
+      color: @gray-light;
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
 
 
 
@@ -64,27 +100,29 @@ body {
    ========================================================================== */
 
 .sidebar { 
+  
+  padding-top: @navbar-margin-bottom*2; 
+  padding-left: 2em;
+  padding-right: 2em;
+  
   .widget {
+    
+    color: #FFF;
+    
+    h3, h4, h5 {
+      color: #FFF;
+    }
+    
     h3 {
       font-size: @font-size-h4;
+      margin-top: 2em;
     }
     
     ul {
-      .nav;
       
-      li.recentcomments {
-        padding: @nav-link-padding;
+      list-style: none;
+      padding: 0;
       
-        >a {
-          display: inline;
-          padding: 0;
-          
-          &:hover {
-            background: none;
-            text-decoration: underline;
-          }
-        }
-      }
     }
     
   }
@@ -111,10 +149,6 @@ body {
    ========================================================================== */
 
 .hentry {
-  .entry-content {
-    font-size: @font-size-large;
-    font-weight: 200;
-  }
   
   .group-extra-content {
     dl {
@@ -166,8 +200,6 @@ body {
   bottom: @navbar-margin-bottom*2;
   left: 15px;
 }
-
-
 
 /* ==========================================================================
    WordPress Generated Classes
