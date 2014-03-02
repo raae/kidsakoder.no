@@ -131,11 +131,10 @@ function theme_current_type_nav_class($css_class, $item) {
     if (empty($post_type))
         $post_type = get_post_type();
   
-    if (empty($post_type))
+    if (empty($post_slug))
         $post_slug = get_post_type_object( $post_type )->rewrite['slug'];
 
-    if (('page' == $item->object && in_array($post_type, $custom_post_types))
-       || ('custom' == $item->object && !empty($item->url) && preg_match("/^$post_slug/", $item->url) === 1)) {
+    if ('page' == $item->object && in_array($post_type, $custom_post_types)) {
       
         if (empty($filter_func))
             $filter_func = create_function('$el', 'return ($el != "current_page_parent");');
@@ -143,7 +142,14 @@ function theme_current_type_nav_class($css_class, $item) {
         $css_class = array_filter($css_class, $filter_func);
       
         $template = get_page_template_slug($item->object_id);
+        
         if (!empty($template) && preg_match("/^page(-[^-]+)*-$post_type/", $template) === 1)
+            array_push($css_class, 'current_page_parent');
+    }
+  
+    if('custom' == $item->object) {
+        $url = $item->url;
+        if (!empty($url) && strpos($url, $post_slug) !== false)
             array_push($css_class, 'current_page_parent');
     }
 
