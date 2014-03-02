@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: LKK v0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-03-01 12:56:05+0000\n"
+"PO-Revision-Date: 2014-03-02 12:33:17+0000\n"
 "Last-Translator: Harald Ringvold <harald.ringvold@gmail.com>\n"
 "Language-Team: Harald Ringvold <harald.ringvold@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr "%s Aktivering av temaet"
 msgid "&larr; Older comments"
 msgstr "&larr; Eldre kommentarer"
 
-#: templates/pagination.php:4
+#: templates/pagination.php:5
 #@ roots
 msgid "&larr; Older posts"
 msgstr "&larr; Eldre innlegg"
@@ -172,7 +172,7 @@ msgstr "Navn"
 msgid "Newer comments &rarr;"
 msgstr "Nyere kommentarer &rarr;"
 
-#: templates/pagination.php:5
+#: templates/pagination.php:6
 #@ roots
 msgid "Newer posts &rarr;"
 msgstr "Nyere innlegg &rarr;"
@@ -347,7 +347,6 @@ msgid "Group"
 msgstr "Gruppe"
 
 #: lib/custom.php:75
-#: template-groups.php:11
 #@ roots
 msgid "Groups"
 msgstr "Grupper"
@@ -441,12 +440,12 @@ msgstr[1] "%1$er svar til &ldquo;%2$s&rdquo;"
 msgid "Group Contact"
 msgstr "Kontaktperson"
 
-#: templates/lkk_group-contact.php:19
+#: templates/lkk_group-contact.php:24
 #@ roots
 msgid "Email"
 msgstr "E-post"
 
-#: templates/lkk_group-contact.php:23
+#: templates/lkk_group-contact.php:29
 #@ roots
 msgid "Phone number"
 msgstr "Telefonnummer"
@@ -465,10 +464,16 @@ msgstr "Kodeklubb"
 #, php-format
 #@ roots
 msgid "Tech Group: %s"
-msgstr "Teknologigruppe"
+msgstr "Teknologigruppe: %s"
+
+#: templates/lkk_group-contact.php:19
+#@ roots
+msgid "Twitter"
+msgstr ""
 
 #: templates/lkk_group-info.php:14
+#, php-format
 #@ roots
-msgid "Group"
-msgstr "Gruppe"
+msgid "Group: %s"
+msgstr "Gruppe: %s"
 

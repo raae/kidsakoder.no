@@ -11,7 +11,7 @@
     elseif(get_field('group_type') == 'tech')
       printf(__('Tech Group: %s', 'roots'), get_field('group_techology'));
     else
-      _e('Group','roots');
+      printf(__('Group: %s', 'roots'), get_field('group_description'));
     ?>
     </h3>
   </div>
