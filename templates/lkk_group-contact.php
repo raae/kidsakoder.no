@@ -1,4 +1,4 @@
-<?php if(ACF && get_field('contact_person_email') || get_field('contact_person_number')): ?>
+<?php if(ACF && get_field('contact_person_email') || get_field('contact_person_number' || get_field('contact_person_name') || get_field('contact_person_twitter'))): ?>
 
 <div class="panel panel-default contact-person">
   <div class="panel-heading">
