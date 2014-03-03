@@ -12,7 +12,7 @@
 @font-family-sans-serif:  'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 @headings-font-weight: bold;
 
-@brand-primary: #27d96a;
+@brand-primary: @gray-lighter;
 
 //@link-color:            @text-color;
 @link-hover-color:      @brand-primary;
@@ -60,6 +60,16 @@ body {
       margin-bottom: 0.5em;
     }
 
+  }
+  
+  .nav-pills>li.active>a, 
+  .nav-pills>li.active>a:hover, 
+  .nav-pills>li.active>a:focus {
+    color: @text-color;
+  }
+  
+  .nav-pills>li>a:hover {
+    color: @text-color;
   }
 }
 
@@ -109,10 +119,10 @@ body {
   
   .widget {
     
-    color: #FFF;
+    color: @gray-lighter;
     
     h3, h4, h5 {
-      color: #FFF;
+      color: @gray-lighter;
     }
     
     h3 {
@@ -121,17 +131,18 @@ body {
     }
     
     ul {
-      
       list-style: none;
-      padding: 0;
-      
+      padding: 0; 
+    }
+    
+    li {
+      margin: 0.5em 0;
     }
     
     a {
       color: @gray-light;
     
     &:hover {
-      color: #FFF;
       text-decoration: underline;
     }
   }
